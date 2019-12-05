@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+ fourth:
+  image: centos:mudit
+  build: .
+  container_name: c4
+  ports:
+   - 8885:80
+  volumes:
+   - ./data:/var/www/html/

@@ -1,0 +1,16 @@
+version: "2.1"
+services:
+ eigth:
+  image: adminer
+  depends_on:
+   - db
+  restart: always
+  container_name: c8
+  ports:
+   - 8555:8080
+
+ db:
+  image: mysql
+  restart: always
+  environment:
+   MYSQL_ROOT_PASSWORD: redhat

@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+ seventh:
+  image: nginx
+  container_name: c7
+  ports:
+   - 8666:80
+  networks:
+   - net1
+   - net2
+networks:
+ net1:
+  driver: "bridge"
+ net2:
+  driver: "bridge"
+

@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+ fifth:
+  image: centos:v3
+  build:
+   context: .
+   dockerfile: mudit.dockerfile
+  container_name: c5
+  ports:
+   - 8889:80

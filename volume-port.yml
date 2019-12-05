@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+ third:
+  image: nginx
+  container_name: c3
+  ports:
+   - 8880:80
+  volumes:
+   - ./data:/usr/share/nginx/html/
+
